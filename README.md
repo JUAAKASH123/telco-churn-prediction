@@ -9,18 +9,29 @@ I used the well-known IBM Telco Customer Churn dataset to build a practical chur
 The goal was to identify customers at risk of leaving based on their demographics, service usage, and billing information.
 
 Key highlights
+
 -Careful data cleaning, including handling hidden missing values
--Proper handling of categorical features
+
+-Proper handling of categorical features 
+
 -Comparison of two strong tree-based models: Random Forest and XGBoost
+
 -Addressed class imbalance (only ~26% of customers churn)
+
 -Deployed a working prediction API using FastAPI
+
 -Clean, modular, and readable code with documentation
+
 -Final model chosen: XGBoost, as it provided the best balance between precision, recall, and F1-score.
 
 Dataset
+
 -7,043 customer records
+
 -21 original features (customerID was dropped)
+
 -Target: Churn (Yes / No → converted to 1 / 0)
+
 Main challenge:
 -The TotalCharges column contained 11 blank values that appeared as empty strings rather than NaN, requiring explicit conversion and handling.
 
@@ -31,8 +42,11 @@ Random Forest	   0.787	  0.637	    0.458   	0.533
 XGBoost	         0.755	  0.535	   0.567	    0.551
 
 -Although Random Forest achieved slightly higher accuracy, XGBoost performed better on recall and F1-score, which is more important for identifying customers at risk of churn.
+
 -Class imbalance was handled using:
+
 -class_weight='balanced' for Random Forest
+
 -scale_pos_weight for XGBoost
 
 Why No Feature Scaling ?
