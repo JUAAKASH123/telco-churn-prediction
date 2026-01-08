@@ -16,7 +16,6 @@ A complete end-to-end machine learning solution to predict whether a telecom cus
 - [Project structure](#project-structure)
 - [Setup & usage](#setup--usage)
 - [API](#api)
-- [Contributing](#contributing)
 - [License & contact](#license--contact)
 
 ---
@@ -174,26 +173,8 @@ Check `src/app.py` for the exact input schema.
 
 ---
 
-## Contributing
-
-Contributions are welcome. Suggested workflow:
-- Fork the repo
-- Create a feature branch
-- Add tests / update notebooks / update docs
-- Open a PR with a clear description of changes
-
-Please follow code style and add brief tests for any new logic.
-
----
 
 ## License & contact
 
-Specify your project's license (e.g., MIT) or replace with your preferred license.
-
 Author / Maintainer: JUAAKASH123  
 Repository: https://github.com/JUAAKASH123/telco-churn-prediction
-
-If you want, I can:
-- update README further with exact command examples from the code,
-- add badges (build / license), or
-- generate a minimal example request body for the API based on src/app.py.
