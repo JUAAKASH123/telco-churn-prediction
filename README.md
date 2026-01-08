@@ -108,10 +108,7 @@ A high-level view of the repository:
   - train.py         — training pipeline and model export
   - app.py           — FastAPI app to serve predictions
   - preprocessing.py — cleaning & encoding utilities
-  - model.py         — model wrappers & inference helpers
-  - utils.py         — helper functions
-- notebooks/         — exploratory analysis (optional)
-- models/            — serialized model artifacts (.pkl, .joblib, or XGBoost binary)
+  - models/            — serialized model artifacts (.pkl, .joblib, or XGBoost binary)
 
 Adjust paths above if your code layout differs.
 
